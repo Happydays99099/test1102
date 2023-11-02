@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-TW"><!--宣告語系-->
+
+<head>
+    <meta charset="UTF-8"><!--萬國編碼-->
+    <meta name="description" content="Free Web tutorials"><!--描述-->
+    <meta name="keywords" content="HTML, CSS, JavaScript"><!--關鍵字-->
+    <meta name="author" content="Sunny, lovelychining@gmail.com"><!--作者-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2, minimum-scale=0.5">
+    <!--跨裝置檢視-->
+    <title>這是網頁練習1031-複雜版面排版</title><!--頁籤文字-->
+
+    <style>
+        /* 整體宣告 */
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f1f1f1;
+            padding: 10px;
+        }
+        /* 頁首區塊 */
+        .header{
+            padding: 30px;
+            background: white;
+            text-align: center;
+        }
+        .header h1{
+            font-size: 50px;
+        }
+
+        /* 選單列 */
+        .topnav{
+            background: black;
+            overflow: hidden;
+        }
+
+        /* 選單列項目 */
+        .topnav a{
+            float: left;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .topnav a:last-child{
+            float: right;
+        }
+       
+        /* 選單列經過變底色 */
+        .topnav a:hover{
+            background-color:#f2f2f2;
+            color: black;
+        }
+
+        /* 左欄設定 */
+        .leftcolumn{
+            float: left;
+            width: 75%;
+        }
+        /* 右欄設定 */
+        .rightcolumn{
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+        /* 內容區塊 */
+        .card{
+            margin-top: 20px;
+            background: white;
+            padding: 20px;
+        }
+        /* 假圖 */
+        .fakeimg{
+            background: #aaa;
+            padding: 10px;
+        }
+        .big_pic{
+            height: 200px;
+        }
+        .small_pic{
+            height: 100px;
+        }
+        /* 頁尾區塊 */
+        .footer{
+            text-align: center;
+            background: #aaa;
+            clear: both;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>練習網站</h1>
+        <p>網站內容文字，填入假文以讓畫面好看。</p>
+    </div>
+    <div class="topnav">
+        <a href="#">連結1</a>
+        <a href="#">連結2</a>
+        <a href="#">連結3</a>
+        <a href="#">其它連結</a>
+    </div>
+    <div class="row">
+        <!-- 內容分左右兩欄 -->
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>內文標題文字</h2>
+                <h5>標題描述說明, 8月 1日, 2022</h5>
+                <div class="fakeimg big_pic">假圖區塊</div>
+                <p>文字內容..</p>
+                <p>止海力放送言即今。牠行枝院完抱掃秋幫定辛冒因：說的視，呢星進男朋千兆畫知甲的員冰東巴，姐昔具封米習雪！草主美美視送子？玉好拉木位母星，追戶寺尺有筆衣書什昔公裏她跑力乾燈！許我工京畫斤跳園每第歡大至。
+                    因這早收甲物象孝內貓吃借活好抱好。京成百立交且尾正葉男麻水和常我帽幫；耍借入助抄魚香裏，樹汗勿用平民登文卜起丁友第吉，房昔遠童，細語五就詞姐犬白書孝巾這，力造院買棵一他光頁下。
+                    送相問收刃可人明壯日飛行。間抓刀米知學功品一記男朵士足福音更。旁爪發祖欠文免定葉實請向童說福眼房「意辛背根祖珠」月追貓：和二課嗎空穴個支怎。
+                    元采山頭法冬貫風兌禾詞吉身力候車課，戶很林頁入久辛土青抱園。假多村吧弟現比綠造坐因很止勿幸看親，象常耳奶歡吉圓住比比朵長邊抄；荷帶子光休他穴課兒米地古几父借十羽媽車。間裝植泉這左抄平兌登走小。</p>
+            </div>
+            <div class="card">
+                <h2>底欄標題文字</h2>
+                <h5>標題描述說明, 8月 1日, 2022</h5>
+                <div class="fakeimg big_pic">假圖區塊</div>
+                <p>文字內容..</p>
+                <p>止海力放送言即今。牠行枝院完抱掃秋幫定辛冒因：說的視，呢星進男朋千兆畫知甲的員冰東巴，姐昔具封米習雪！草主美美視送子？玉好拉木位母星，追戶寺尺有筆衣書什昔公裏她跑力乾燈！許我工京畫斤跳園每第歡大至。
+                    因這早收甲物象孝內貓吃借活好抱好。京成百立交且尾正葉男麻水和常我帽幫；耍借入助抄魚香裏，樹汗勿用平民登文卜起丁友第吉，房昔遠童，細語五就詞姐犬白書孝巾這，力造院買棵一他光頁下。
+                    送相問收刃可人明壯日飛行。間抓刀米知學功品一記男朵士足福音更。旁爪發祖欠文免定葉實請向童說福眼房「意辛背根祖珠」月追貓：和二課嗎空穴個支怎。
+                    元采山頭法冬貫風兌禾詞吉身力候車課，戶很林頁入久辛土青抱園。假多村吧弟現比綠造坐因很止勿幸看親，象常耳奶歡吉圓住比比朵長邊抄；荷帶子光休他穴課兒米地古几父借十羽媽車。間裝植泉這左抄平兌登走小。</p>
+            </div>
+
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <div class="card">
+                    <h2>底欄標題文字</h2>
+                    <div class="fakeimg small_pic">假圖區塊</div>
+                    <p>止海力放送言即今。牠行枝院完抱掃秋幫定辛冒因：說的視，呢星進男朋千兆畫知甲的員冰東巴，姐昔具封米習雪！草主美美視送子？玉好拉木位母星，追戶寺尺有筆衣書什昔公裏她跑力乾燈！許我工京畫斤跳園每第歡大至。
+                        因這早收甲物象孝內貓吃借活好抱好。京成百立交且尾正葉男麻水和常我帽幫；耍借入助抄魚香裏，樹汗勿用平民登文卜起丁友第吉，房昔遠童，細語五就詞姐犬白書孝巾這，力造院買棵一他光頁下。
+                        送相問收刃可人明壯日飛行。間抓刀米知學功品一記男朵士足福音更。旁爪發祖欠文免定葉實請向童說福眼房「意辛背根祖珠」月追貓：和二課嗎空穴個支怎。
+                        元采山頭法冬貫風兌禾詞吉身力候車課，戶很林頁入久辛土青抱園。假多村吧弟現比綠造坐因很止勿幸看親，象常耳奶歡吉圓住比比朵長邊抄；荷帶子光休他穴課兒米地古几父借十羽媽車。間裝植泉這左抄平兌登走小。
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <h2>底欄標題文字</h2>
+                <div class="fakeimg small_pic">假圖區塊</div>
+                <div class="fakeimg small_pic">假圖區塊</div>
+                <div class="fakeimg small_pic">假圖區塊</div>
+            </div>
+            <div class="card">
+                <h2>底欄標題文字</h2>
+                <p>止海力放送言即今。牠行枝院完抱掃秋幫定辛冒因：說的視，呢星進男朋千兆畫知甲的員冰東巴，姐昔具封米習雪！草主美美視送子？玉好拉木位母星，追戶寺尺有筆衣書什昔公裏她跑力乾燈！許我工京畫斤跳園每第歡大至。
+                    因這早收甲物象孝內貓吃借活好抱好。京成百立交且尾正葉男麻水和常我帽幫；耍借入助抄魚香裏，樹汗勿用平民登文卜起丁友第吉，房昔遠童，細語五就詞姐犬白書孝巾這，力造院買棵一他光頁下。
+                    送相問收刃可人明壯日飛行。間抓刀米知學功品一記男朵士足福音更。旁爪發祖欠文免定葉實請向童說福眼房「意辛背根祖珠」月追貓：和二課嗎空穴個支怎。
+                    元采山頭法冬貫風兌禾詞吉身力候車課，戶很林頁入久辛土青抱園。假多村吧弟現比綠造坐因很止勿幸看親，象常耳奶歡吉圓住比比朵長邊抄；荷帶子光休他穴課兒米地古几父借十羽媽車。間裝植泉這左抄平兌登走小。
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <h2>網站版權宣告</h2>
+        <p>Copyright © 2022 Sunny. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
